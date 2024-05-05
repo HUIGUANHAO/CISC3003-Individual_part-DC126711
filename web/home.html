@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>HOME</title>
+</head>
+<body>
+
+    <header class="head" id="head">
+
+        <!-- logo -->
+        <div class="logo_box">
+            <p>MRP</p>
+        </div>
+
+        <!-- Top navigation -->
+        <div class="nav_box">
+            <a href="home.html"><span class="home_page">HOME</span></a>
+            <a href="rent.php"><span class="rent_house">RENT</span></a>
+        </div>
+
+
+        <div class="photo">
+            <a href="myprofile.php"><img src="../web/coverage/photo.png" alt="some_text" width="50" height="50"></a>     
+        </div>
+
+    </header>
+
+    <!--search-->
+    <form action="" class="search_box">
+        <input class="search" type="text" name="search" id="searchBox" placeholder=" Please enter your search">
+        <input  class="search_text" type="button" name="submit" id="searchButton" value="search" style="width: 50px;height: 30px; font-size: 16px; text-align: center;border: none;background-color: rgba(217, 179, 163, 86);opacity: 0.70;">
+        <script>
+            var searchEle = document.getElementById("searchBox");
+            var c = searchEle.placeholder;
+            searchEle.onfocus = function () {
+                if (searchEle.placeholder === c){
+                    searchEle.placeholder = ""
+                }
+            };
+            searchEle.onblur = function () {
+                if (!searchEle.placeholder.trim()){
+                    searchEle.placeholder = c;
+                }
+            };
+        </script>
+    </form>
+
+    <section>
+
+        <div class="title">
+            <p>MRP</p>
+            <p>&nbsp;Convenient and beautiful</p>
+        </div>
+        
+
+        <div class="mem_box">
+            <form href>
+                <input type="button" name="member1" id="sumitbox1" value="I'm a tenant" onclick="location.href=('tenantlogin.html')" style="border: none;background-color: #665454;color: white;text-align: center;width: 200px; height: 40px;">
+            </form>
+
+            <form href>
+                <input type="button" name="member2" id="sumitbox2" value="I'm the landlord" onclick="location.href=('landlordlogin.html')" style="margin-left: 50px;border: none;background-color: #665454;color: white;text-align: center;width: 200px; height: 40px;">
+            </form>
+        </div>
+
+        
+
+    </section>
+ 
+
+
+</body>
+</html>

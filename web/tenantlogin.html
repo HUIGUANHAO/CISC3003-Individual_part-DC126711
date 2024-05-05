@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tenant register/login system</title>
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<script type="text/javascript">
+
+//phonenumber format
+function validate_idcard(idcard) {
+        var idcardReg = /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/;
+
+        if (idcard != "" && idcard.search(idcardReg) != -1) {
+            document.getElementById("test_idcard").innerHTML = "<font color='green' size='3px'>√The phone number is formatted correctly</font>";
+        }else {
+            document.getElementById("test_idcard").innerHTML = "<font color='red' size='3px'>The phone number cannot be empty</font>";
+        }
+
+    }
+
+ //username format
+ function validate_username(username) {
+        var usernameReg = /^[\u4e00-\u9fa5]{1,8}$/;
+        if (username != "" && username.search(usernameReg) != -1) {
+            document.getElementById("test_user").innerHTML = "<font color='green' size='3px'>√Correct username</font>";
+        } else {
+            document.getElementById("test_user").innerHTML = "<font color='red' size='3px'>Wrong username</font>";
+        }
+    }
+
+    //password foRmat
+    function validate_password(password) {
+        //^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6-10}$
+        var passwordReg = /^[a-zA-Z]\w{5,17}$/;
+        if (password != "" && password.search(passwordReg) != -1) {
+            document.getElementById("test_pw").innerHTML = "<font color='green' size='3px'>√Password format is correct</font>";
+        } else {
+            document.getElementById("test_pw").innerHTML = "<font color='red' size='3px'>The password entered is in the wrong format</font>";
+
+        }
+    }
+
+    //check password
+    function validate_password2(password2) {
+        var password = document.getElementById("password").value;
+
+        if (password == "") {
+            document.getElementById("is_test_pw").innerHTML = "<font color='red' size='3px'>The password is not empty</font>";
+        } else if (password == password2) {
+            document.getElementById("is_test_pw").innerHTML = "<font color='green' size='3px'>√The password is the same both times</font>";
+        } else {
+            document.getElementById("is_test_pw").innerHTML = "<font color='red' size='3px'>The password is not the same</font>";
+
+        }
+    }
+
+    
+</script>
+<body>
+<div class="dowebok" id="dowebok">
+    <div class="form-container sign-up-container">
+        <form action="../PHP/tenant_reg.php" method="post">
+            <h1>REGISTER</h1>
+
+            <span>Please enter your information</span>
+            <input type="text" id="idcard" name="idcard" placeholder="Phone number"
+                   onblur="validate_idcard(this.value)">
+
+            <input type="text" id="Username" name="username" placeholder="User name"
+                   onblur="validate_username(this.value)">
+
+            <input type="password" id="Password" name="password" placeholder="Passwords that start with a letter should include letters, numbers, and underscores"
+                   onblur="validate_password(this.value)">
+            <input type="password" id="Password2" name="password2" onblur="validate_password2(this.value)" placeholder="Confirm Password">
+            <button>Register</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="../PHP/tenant_login.php" method="post">
+            <h1>LOGIN</h1>
+
+            <span>Use your account</span>
+            <input type="text" placeholder="Phone number" name="idcard">
+            <input type="text" placeholder="User name" name="username">
+            <input type="password" placeholder="Password" name="pw">
+            <button>LOGIN</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Already have an account?</h1>
+                <p>Please log in using your account</p>
+                <button class="ghost" id="signIn">Login</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>No account?</h1>
+                <p>Let's register</p>
+                <button class="ghost" id="signUp">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var signUpButton = document.getElementById('signUp')
+    var signInButton = document.getElementById('signIn')
+    var container = document.getElementById('dowebok')
+
+    signUpButton.addEventListener('click', function() {
+        container.classList.add('right-panel-active')
+    })
+
+    signInButton.addEventListener('click', function() {
+        container.classList.remove('right-panel-active')
+    })
+</script>
+
+</body>
+</html>
+
