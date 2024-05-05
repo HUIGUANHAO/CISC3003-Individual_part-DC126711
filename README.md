@@ -1,12 +1,12 @@
 # CISC3003 Individual work of project -DC126711
 My personal task is to implement the **profile page** development of our rental website.
   >I will use the following tools and languages to assist in the development:
-  - HTML
-  - CSS
-  - Javascript
-  - jQuery
-  - PHP
-  - MySQL
+  >- HTML
+  >- CSS
+  >- Javascript
+  >- jQuery
+  >- PHP
+  >- MySQL
 
 # Database Deployment
 First, we import the rentsys.sql file, which will create the required database and tables:
@@ -29,11 +29,11 @@ Now we can successfully link to the database!
 1. First we log in to the landlord/tenant account and then go to the home page.
 My screen shots/homepage.png
 2. Then click on the avatar icon in the top right corner to get to the profile screen. We can see that there are many profile tabs that we can change.
-![alt text](<My screen shots/myprofile.png>)
+My screen shots/myprofile.png
 3. Here is the corresponding database view, we can see the user profile data before the change.
 My screen shots/databaseview（before）.png
 4. We modify the user's information.
-![alt text](<My screen shots/changeprofile.png>)
+My screen shots/changeprofile.png
 5. You will be prompted after a successful submission.
 My screen shots/changesuccessfully.png
 6. You can now see the changes in the database for that user.
