@@ -12,26 +12,26 @@ My personal task is to implement the **profile page** development of our rental 
 First, we import the rentsys.sql file, which will create the required database and tables:
 ![alt text](database_setup.png)
 After that we set the password of the user in conn.php file so that we can complete the connection to the database
-''' 
-<?php
-//connect to the database
-    $conn = mysqli_connect("localhost", "root", "root", "rentsys");
-    if(!$conn){
-        die("Failed to connect to the database server");
-    }
-    //Setting character set
-    mysqli_query($conn, "set name utf8");
-''' 
+
+><?php
+>//connect to the database
+>    $conn = mysqli_connect("localhost", "root", "root", "rentsys");
+>    if(!$conn){
+>        die("Failed to connect to the database server");
+>    }
+>    //Setting character set
+>    mysqli_query($conn, "set name utf8");
+ 
 
 Now we can successfully link to the database!
 
 # Walkthrough
 1. First we log in to the landlord/tenant account and then go to the home page.
-My screen shots/homepage.png
+![alt text](homepage.png)
 2. Then click on the avatar icon in the top right corner to get to the profile screen. We can see that there are many profile tabs that we can change.
-My screen shots/myprofile.png
+![alt text](myprofile.png)
 3. Here is the corresponding database view, we can see the user profile data before the change.
-My screen shots/databaseview（before）.png
+![alt text](databaseview（before）.png)
 4. We modify the user's information.
 My screen shots/changeprofile.png
 5. You will be prompted after a successful submission.
