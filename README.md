@@ -10,7 +10,7 @@ My personal task is to implement the **profile page** development of our rental 
 
 # Database Deployment
 First, we import the rentsys.sql file, which will create the required database and tables:
-![alt text](database_setup.png)
+![alt text](<My screen shots/database_setup.png>)
 After that we set the password of the user in conn.php file so that we can complete the connection to the database
 
 ><?php
