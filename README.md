@@ -21,7 +21,7 @@ The first step is to start our server, which requires us to install XAMPP or WAM
 
 After that we set the password of the user in conn.php file so that we can complete the connection to the database
 
-'''php
+```php
 <?php
 //connect to the database
     $conn = mysqli_connect("localhost", "root", "root", "rentsys");
@@ -31,7 +31,7 @@ After that we set the password of the user in conn.php file so that we can compl
     //Setting character set
     mysqli_query($conn, "set name utf8");
 ?>
-'''
+```
 
 Now we can successfully link to the database!
 
