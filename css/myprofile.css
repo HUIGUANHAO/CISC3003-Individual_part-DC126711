@@ -1,0 +1,235 @@
+body {
+    background-color: #ded4d4;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.head {
+    display: flex;
+    width: 100%;
+    height: 98px;
+    line-height: 20px;
+    opacity: 0.9;
+    background-color: rgba(217, 179, 163, 86);
+    text-align: center;
+    border: 1px solid rgba(187, 187, 187, 100);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.logo_box {
+    margin-top: 5px;
+    width: 148px;
+    height: 56px;
+    margin-left: 87px;
+    color: rgba(255, 255, 255, 100);
+    font-size: 36px;
+    text-align: left;
+    font-weight: bold;
+    font-family: SourceHanSansSC-bold;
+}
+
+.sign_out {
+    margin-top: -810px;
+    margin-left: 250px;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+    color: black;
+    width: 35px;
+
+}
+
+.nav_box {
+    margin-left: 170px;
+    margin-top: 43px;
+    display: inline-block;
+    min-height:80px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.message_title {
+    color: #715C5C;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.oder_title {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 150px;
+}
+
+.vip_title {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 150px;
+}
+
+.mem_box {
+    background-color: white;
+    height: 190px;
+    width: 150px;
+    display: block;
+    border-radius: 10px;
+    margin-top: 160px;
+    margin-left: 100px;
+    position: fixed;
+    text-align: center;
+}
+
+.username {
+    font-size: 17px;
+    color: #4D2222;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid gray;
+}
+
+.mem_text {
+    display: block;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #a55b5b;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.switch_account {
+    margin-right: 35px;
+    margin-left: 37px;
+    text-align: center;
+}
+
+.mymessage {
+    width: 760px;
+    height: 52px;
+    background-color: #bbb1b1;
+    margin-left: 330px;
+    margin-top: 40px;
+}
+
+.message_text {
+    color: #4D2222;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;
+    padding-top: 15px;
+}
+
+.message_box {
+    width: 760px;
+    height: 700px;
+    background-color: white;
+    margin-left: 330px;
+    margin-top: -20px;
+}
+
+/*.photo_box {
+    display: inline-block;
+}*/
+
+.photo_title {
+    margin-left: 60px;
+    padding-top: 60px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+}
+
+.upload_photo {
+    display: block;
+    margin-left: 300px;
+    margin-top: -10px;
+}
+
+.upload_text {
+    font-size: 10px;
+    color: #A29F9F;
+}
+
+.name_box {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.name_text {
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+}
+
+.sex_box {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.sex_text {
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+}
+
+.phonenumber_box {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.phonenumber_text {
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+}
+
+.email_box {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.email_text {
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+}
+
+.address_box {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.address_text {
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+}
+
+.preserve {
+    margin-left: 185px;
+    margin-top: 70px;
+}
+
+.houser {
+    color: #715C5C;
+    font-size: 21px;
+    font-weight: bolder;
+    padding-left: 40px;
+}
+
