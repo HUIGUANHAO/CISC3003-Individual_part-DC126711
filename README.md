@@ -16,7 +16,9 @@ The first step is to start our server, which requires us to install XAMPP or WAM
 >2. Let's open the Admin screen
 >3. Select import
 >4. we import the rentsys.sql file, which will create the required database and tables:
+
 ![alt text](<My screen shots/database_setup.png>)
+
 After that we set the password of the user in conn.php file so that we can complete the connection to the database
 
 ><?php
@@ -27,7 +29,7 @@ After that we set the password of the user in conn.php file so that we can compl
 >    }
 >    //Setting character set
 >    mysqli_query($conn, "set name utf8");
- Now we can successfully link to the database!
+Now we can successfully link to the database!
 
 # Walkthrough
 1. First we log in to the landlord/tenant account and then go to the home page.
