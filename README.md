@@ -11,7 +11,11 @@ My personal task is to implement the **profile page** development of our rental 
   >- MySQL
 
 # Database Deployment
-First, we import the rentsys.sql file, which will create the required database and tables:
+The first step is to start our server, which requires us to install XAMPP or WAMP and MySQL already on our computer.
+>1. We start the XAMPP or WAMP server first
+>2. Let's open the Admin screen
+>3. Select import
+>4. we import the rentsys.sql file, which will create the required database and tables:
 ![alt text](<My screen shots/database_setup.png>)
 After that we set the password of the user in conn.php file so that we can complete the connection to the database
 
