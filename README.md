@@ -63,3 +63,7 @@ Now we can successfully link to the database!
 
 9. After selecting the logout button, the account will automatically log out and return to the home page.
 ![alt text](<My screen shots/logoutview.png>)
+
+<br><br>
+This is the whole process of my individual work of Team08's project, the full project can be viewed in this repo:
+<https://github.com/HUIGUANHAO/CISC3003-Team08-FinalProject>
